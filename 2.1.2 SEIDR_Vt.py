@@ -14,7 +14,7 @@ def dySEIDR_Vt(y, t, alpha, beta0, beta1, gamma0, gamma1, delta0, delta1, lamda,
     s0, s1, e0, e1, i0, i1, d0, d1, r = y
     n = s0 + s1 + e0 + e1 + i0 + i1 + d0 + d1 + r
 
-    if t < 20:             # 100天后开始接种
+    if t < 20:             # 20天后开始接种
         v = 0
 
     ds0_dt = - lamda * beta0 * s0 * ( i0 + i1 + e0 + e1 ) / n - v * s0
