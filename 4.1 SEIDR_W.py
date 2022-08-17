@@ -54,7 +54,7 @@ def draw_SEIDR(ySEIR):
     plt.plot(t, ySEIR[:, 4], '--', label='r(t)--SEIR')
     plt.legend()
     # plt.show()
-    plt.savefig('./img/' + '4.1. SEIDR_model.jpg')
+    plt.savefig('./img/' + '4.1. SEIDR_W_model.jpg')
 
 if __name__ == '__main__':
     number = 10000      # 模型总人数
